@@ -11,6 +11,53 @@ the quantity in the existing purchase instead of adding a new one.
 3. Purchase of the product. Function takes product name and
 marks it as purchased.*/
 
+/*const shoppingList=[]
+
+function shopping(){
+    console.log("----- Shopping -----\n")
+
+    const blankList=shoppingList.filter((item)=> !item.purchased);
+    for(const item of blankList){
+       console.log(`${item.productName} - ${item.quantity}`);
+    }
+
+    const purchasedList=shoppingList.filter((item) => item.purchased)
+    for(const item of purchasedList){
+        console.log(`${item.productName} (Purchased) - ${item.quantity}`);
+    }
+
+}
+
+function addShopping(productName,quantity){
+    const existing =shoppingList.find((item)=>item.productName === productName)
+
+    if(existing){
+        existing.quantity+=quantity;
+    }
+    else {
+        shoppingList.push({productName,quantity,purchased:false})
+    }
+}
+
+
+function purchaseProduct(productName){
+    const Purchase =shoppingList.find((item)=>item.productName===productName)
+    if(Purchase){
+        Purchase.purchased=true
+        console.log(`${productName} has been marked as purchased.`);
+    }
+    else {
+        console.log(`${productName} is not found in the shopping list.`);
+    }
+}
+
+addShopping("Apple", 5);
+addShopping("Samsung", 3);
+addShopping("Lenova", 1);
+
+shopping();
+purchaseProduct("Apple");
+shopping();*/
 
 //TASK 2
 
